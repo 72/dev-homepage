@@ -1,0 +1,71 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.swatch {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+.meta {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nameRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.role {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hexButton {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  text-align: left;
+  width: 100%;
+  transition: color 0.1s, border-color 0.1s, background 0.1s;
+  letter-spacing: 0.03em;
+}
+
+.hexButton:hover {
+  color: var(--text-primary);
+  border-color: #444;
+  background: var(--surface-hover);
+}
+
+.hexButton.copied {
+  color: #5dde7f;
+  border-color: #1e4a2a;
+  background: #0e2018;
+}
